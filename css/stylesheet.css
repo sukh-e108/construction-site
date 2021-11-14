@@ -1,0 +1,400 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+h1{
+    font-size: 3.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+h2{
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+h3{
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    font-family:'Ubuntu', sans-serif ;
+    line-height: 1.5;
+}
+nav{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    background-color: #fff;   
+}
+.logo{        
+    margin-left: 150px;
+    margin-right: 260px;
+}
+.logo img{
+    height: 120px;
+    width: 330px;
+}
+.navbar{   
+    height: 100px;
+    width: 900px;
+}
+.navbar ul{
+    display: flex;    
+    list-style: none;
+    
+}
+.navbar ul li{    
+    height: 100px;       
+    font-size: 1.3rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 45px;
+    margin-left: 8px; 
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    padding:0px 15px ;
+    color: #6487ba;
+}
+.navbar ul li:hover{
+    background-color:#c8d2ce;
+    /* color: #fff;  */
+    /* rgba(245, 236, 224, 0.911) */
+    
+}
+.navbar ul li:visited{    
+    color: #6487ba;
+}
+/* .navbar ul li a:hover{
+    color: #fff;    
+} */
+.home-icon{
+    height: 15px;
+    width: 15px;
+    margin-left:5px;
+}
+
+.navbar ul li ul{
+    
+    display: none;
+    position: absolute;
+    top: 80px;
+    top: 100px;
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    /* font-weight: 700; */
+    left: 1015px;
+    font-size: 1.2rem;
+    
+    
+}
+.navbar ul li ul li{
+    height: 70px;
+    padding: 25px 10px;
+    font-size: 1.1rem;
+    margin: 0px;
+    font-weight: lighter;
+    
+}
+
+.navbar ul li:hover ul{
+    display: block;
+    color: #6487ba;
+    /* height: 20px; */
+}
+
+
+
+
+
+
+.title{
+    margin-left: 0.3%;
+    /* width: 100%; */
+    height: 700px;
+    background-image: url('../images/bulding1.jpg ');  
+    background-size: 99.7%;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.slogan{
+    position: absolute;
+    top: 350px;
+    left: 120px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+}
+.slogan h3{
+
+}
+
+
+.title a:link, a:visited{   
+    color:#191919e3;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;         
+    border-radius: 6px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+    font-size: 0.9rem;
+    background-color: #ffee52;
+    border: 1px solid #faee6f; 
+     /* rgba(255, 236, 35, 1) */
+
+}
+ 
+
+
+.button-services{
+    position: absolute;
+    top:580px;
+    left: 120px;
+}
+.button-about-us{
+    position: absolute;
+    top:580px;
+    left: 310px;
+}
+
+
+.qualities{
+    height: 130px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content:space-between;
+    width: 60%;
+    margin: 50px auto;
+    color: #0b0b0beb;
+    font-size: bold;
+    font-family:'Ubuntu', sans-serif ;
+    letter-spacing: 0.5px;
+}
+
+.qualities img{
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    margin-bottom: 30px;
+    
+}
+
+.items{
+    /* padding: 0 30px; */
+    text-align: center;
+}
+
+.services{
+    height: 800px;
+    width: 100%;
+    background-color: #89b2ec;
+    color:#fff;
+    padding-top: 50px;
+    letter-spacing: 0.5px;
+}
+
+.services-container{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    border-width: 5%;
+}
+.services h1{
+    width: 100%;
+    text-align: center;
+}
+
+.services h3{
+    border-bottom: 1px solid rgb(255 238 82);
+    padding-bottom:5px ;
+}
+
+
+.services-items{
+    padding: 10px;
+    margin: 20px auto;    
+    height: 500px;
+    width: 500px;    
+    text-align: center;
+}
+  
+.services-items img{
+    margin:40px 0 ;
+    height: 300px;
+    width: 460px;
+}
+.services-items p{
+    text-align: left;
+    margin-left: 15px;
+    width: 455px;
+
+}
+
+
+
+.our-projects{
+    margin: 30px 0px;
+    height: 800px;
+    width: 100%;
+    background-color: #fff;
+    border: 2px solid #f1f1f1;
+    padding: 50px 0px;
+}
+
+.our-projects-heading{
+    
+    width: 40%;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: rgb(244 97 17);
+    text-align: center;    
+}
+.our-projects-heading h3{
+    /* margin: 0px auto; */
+    letter-spacing: 2px;
+    color: #f46111c7;
+}
+
+.our-projects-img-container{
+    margin-top: 30px;   
+    height: 470px;
+    /* width: 80%; */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.our-projects-images{
+    width: 350px;
+    height: 400px;
+}
+
+
+
+.our-projects-btn{
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.our-projects-btn a:link, a:visited{
+    color:#191919e3;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;         
+    border-radius: 6px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: lighter;
+    font-size: 1.4rem;
+    background-color: #ffee52;
+    border: 1px solid #faee6f; 
+}
+
+.gallery-icon{
+    margin-left: 8px;
+    width: 20px;
+    height: 20px;
+    padding-top: 5px;
+}
+
+.contact-us{
+    /* margin: 30px 0px; */
+    height: 400px;
+    width: 100%;
+    background-color:  #89b2ec;
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1.4px;
+
+}
+
+.contact-us h2{
+    padding-top: 80px;
+    font-size: 2.3rem;
+}
+
+.contact-us h3{
+    margin: 30px 0px;
+    color: #ffffffb8;
+}
+
+
+#contact-us-btn{
+    margin: 70px 0px;
+}
+
+#contact-us-btn img{
+    margin-left: 10px;
+} 
+
+footer{
+    height: 300px;
+    width: 100%;
+    color: black;
+    background-color: #fff;
+}
+
+.footer-container{
+    margin: 20px 0px;
+    border:2px solid #f1f1f1; 
+    height: 270px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-container-item{
+    padding-top: 30px;
+    height: 270px;
+    width: 350px;
+   
+    letter-spacing: 1.3px;
+    line-height: 1.3;
+    text-align: left;
+}
+
+.footer-container-item li{
+    list-style: none;
+    margin: 20px 0px;
+    font-family:'Ubuntu', sans-serif;
+    font-weight: lighter;
+    color: #7A7A7A;
+}
+.footer-container-item h3{
+    margin-bottom: 20px;
+    color:#191919e3;
+}
+
+.footer-container-item p{
+    font-size:0.9rem ;
+    font-family:'Ubuntu', sans-serif;
+    color: #7A7A7A;
+      
+
+}
+.footer-icons{
+    margin: 20px 0px 10px 30px;
+}
+.footer-container-item a:link{
+    color: #7A7A7A;
+    text-decoration: none;
+
+}
+}
+.footer-container-item a:visited{
+    color: #7A7A7A;
+    text-decoration: none;
+}
+.footer-container-item a:hover{
+    text-decoration: underline;
+    color: #7A7A7A;
+}

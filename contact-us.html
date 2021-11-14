@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact-us.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
+
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+      <!-- navigation bar -->
+
+      <header>
+
+        <div class="logo"><img src="images/logo5.png" alt=""></div>
+
+        <div class="nav-toggle" onclick="myFunction();"><span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav id="nav">
+            <ul>
+
+                <li><a href="index.html">HOME<img src="images/home-icon.png" alt="" class="home-icon"></a></li>
+                <li><a href="about-us.html">ABOUT US</a></li>
+                <li class="drop-down"><a href="services.html" >SERVICES<img src="images/drop-drown-arrow2.png" alt="" height="15px"
+                    width="15px"></a>
+                    <ul>
+                        <li><a href="residential.html">RESIDENTIAL</a></li>
+                        <li><a href="commercial.html">COMMERCIAL</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="contact-us.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <section class="section1">
+        
+        <div class="heading">
+            <h1>CONTACT US</h1>
+        </div>
+        <div class="paragraph">
+            <p>Interested in partnering with BJK Management Ltd on your next project? Have any
+                general questions or comments about our construction firm in Calgary, Alberta? We’d love to hear from you.
+                Please fill out the form below, and a team member will contact you as soon as possible.</p>
+        </div>
+
+        <div class="contact-details">
+
+            <div id="contact-form" class="contact-details-sub">
+                <form action="adw.php">
+                    <label for="name" placeholder="Enter your full name" >Full Name:</label>
+                    <input type="text" name="" id="" class="form-input">
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="" id="" class="form-input">
+
+                    <label for="pnumber">Phone:</label>
+                    <input type="tel" name="" id="" class="form-input">
+
+                    <label for="">Your Message:</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                    <input type="submit" value="Send Message" id="submit-btn" >
+                </form>
+            </div>
+
+
+            <div id="address-info" class="contact-details-sub" >
+
+                <p><img src="images/contact-us-img/pngkey.com-smartphone-icon-png-1327781.png" alt="" height="50px" width="50px">
+                <br>
+                
+                Call 403-771-3702
+
+                <br>
+                <br>
+                Our team has the experience to manage complex, time-sensitive projects. Reach out to us today.
+                <br>
+                <br>
+                Email: Garrygill72@hotmail.com            
+                            
+           </p>
+
+            </div>
+            
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-container-item"><img src="images/logo5.png" alt="" class="footer-logo"></div>
+
+            <div class="footer-container-item">
+                <h3>About Company</h2>
+                    <p>BJK management Ltd is a Construction Company that plans, designs, and
+                    constructs residential and commercial projects in the Calgary, Alberta.</p>
+            </div>
+
+            <div class="footer-container-item">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li>
+                        Address: 293 Downtown,<br>Calgary, Canada
+                    </li>
+                    <li>Ph: 403-771-3702 </li>
+                    <li>
+                        Email: <a href="mailto:Garrygill72@hotmail.com" class="mail-id">Garrygill72@hotmail.com</a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+            <div class="footer-container-item">
+
+                <h3>FOLLOW US</h3>
+                <li><a href="#"><img src="images/fb-icon.png" alt="" height="20px" width="20px"
+                            class="footer-icons"></a></li>
+                <li><a href="#"><img src="images/insta-icon.png" alt="" height="20px" width="20px"
+                            class="footer-icons"></a></li>
+
+            </div>
+
+
+
+
+        </div>
+    </footer>
+
+
+
+
+
+    <script type="text/javascript">
+
+        function myFunction() {
+
+            var navbar = document.getElementById('nav')
+            navbar.classList.toggle('show');
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
