@@ -30,13 +30,10 @@ p{
 
 /* navigation bar */
 
-
 header{
     display: flex;
     flex-wrap: wrap;
 }
-
-
 
 .logo{
     display: inline-block;
@@ -102,6 +99,12 @@ nav ul li a,nav ul li a:visited{
 }
 
 
+.drop-down img{
+    height: 13px;
+    width: 15px;
+    margin-left:5px;
+}
+
 .drop-down ul{
     display: none;
     position: absolute;
@@ -115,6 +118,7 @@ nav ul li a,nav ul li a:visited{
 }
 
 
+
 .drop-down:hover ul li{
     display: block;
 }
@@ -126,10 +130,85 @@ nav ul li a,nav ul li a:visited{
 
 
 
-@media (max-width: 768px){
-    .nav-toggle{
-        display: block;
+@media (max-width: 1310px){
+    .logo{
+        margin-left: 2%;
+        margin-right: 10%;
     }
+    nav ul li a,nav ul li a:visited{
+        font-weight: 700;
+        color: #6487ba;
+        font-size: 1.1rem;
+        
+        padding: 40px 10px;
+        
+    }
+}
+
+
+@media (max-width: 1024px){
+    .logo{
+        margin-left: 0px;
+        margin-right: 5%;
+    }
+
+    .logo img{
+        height: 100px;
+        width: 250px;
+    }
+
+    nav ul li a,nav ul li a:visited{
+        font-weight: 700;
+        color: #6487ba;
+        font-size: 1rem;
+        
+        padding: 40px 10px;
+        
+    }
+    .drop-down ul li a{
+        font-size: 0.9rem;
+        padding:25px 12px ;
+    }
+}
+
+
+@media (max-width:850px){
+    .logo{    
+        margin-left: 0px;    
+        /* margin-right: 0%; */
+    }
+    .logo img{
+        width: 200px;
+    }
+    nav ul li a,nav ul li a:visited{
+        font-weight: 700;
+        
+        font-size: 1rem;
+        
+        padding: 40px 5px;
+        
+    }
+}
+
+
+@media (max-width: 768px){
+
+    .logo{
+        margin-right: 50%;
+    }
+
+    .home-icon{display: none;}
+
+    .drop-down img{display: none;}
+
+    .nav-toggle{
+        display: inline-block;        
+        position: absolute;
+        right: 3%;        
+        padding: 40px 10px;            
+        
+    }
+
 
     nav{
         display: none;        
@@ -143,7 +222,7 @@ nav ul li a,nav ul li a:visited{
     }
     nav ul li{
         display: block;
-        /* border-bottom: 2px solid whitesmoke; */
+        
     }
     nav ul li a,nav ul li a:visited{
         color: #fff;
@@ -156,13 +235,32 @@ nav ul li a,nav ul li a:visited{
         text-decoration: underline;
     }
 
+
+
+
+
 }
+
+
 
 
 @media (max-width: 440px){
     .logo{
         margin-left: 0px;
         margin-right: 2%;
+    }
+
+    .title{
+        height: 1000px;
+    }
+
+    .nav-toggle{
+        display: inline-block;        
+        position: absolute;
+        right: 3%;        
+        padding: 40px 10px;
+            
+        
     }
 }
 
@@ -178,8 +276,14 @@ nav ul li a,nav ul li a:visited{
     height:400px;
     width: 100%;
     background-image: url(../images/projects/2.jpg);    
-    background-repeat: no-repeat; 
-    background-size: 100% 400px;
+    /* for making background-image responsive  */
+
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
     color: #fff;
     text-align: center;
     line-height: 400px;
@@ -279,8 +383,9 @@ nav ul li a,nav ul li a:visited{
 
 .contact-us{
     /* margin: 30px 0px; */
-    height: 400px;
+    /* height: 400px; */
     width: 100%;
+    padding-bottom: 50px;
     background-color:  #89b2ec;
     color: #fff;
     text-align: center;
@@ -307,7 +412,7 @@ nav ul li a,nav ul li a:visited{
 #contact-us-btn img{
     margin-left: 10px;
 } 
-
+ 
 
 .our-projects-btn{
     margin-top: 20px;
@@ -331,19 +436,17 @@ nav ul li a,nav ul li a:visited{
 
 
 
-
-
 footer{
-   
+    /* height: 300px; */
     width: 100%;
     color: black;
     background-color: #fff;
 }
 
 .footer-container{
-    margin: 20px 0px;
+    margin: 30px 0px;
     border:2px solid #f1f1f1; 
-   
+    /* height: 270px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -402,4 +505,20 @@ footer{
     height: 120px;
     width: 300px;
     margin:40px 0px 0px 50px;
+}
+
+
+@media (max-width: 768px){
+    .footer-logo{
+        width: 280px;
+        margin: 20px 0px;
+    }
+}
+
+@media(max-width: 430px){
+    .footer-logo {    
+         
+        width: 280px;
+        margin: 30px 0px 0px 0px;
+    }
 }

@@ -28,7 +28,6 @@ p{
 
 
 
-
 /* navigation bar */
 
 header{
@@ -100,6 +99,12 @@ nav ul li a,nav ul li a:visited{
 }
 
 
+.drop-down img{
+    height: 13px;
+    width: 15px;
+    margin-left:5px;
+}
+
 .drop-down ul{
     display: none;
     position: absolute;
@@ -111,6 +116,7 @@ nav ul li a,nav ul li a:visited{
     display:block   
 
 }
+
 
 
 .drop-down:hover ul li{
@@ -190,9 +196,19 @@ nav ul li a,nav ul li a:visited{
     .logo{
         margin-right: 50%;
     }
+
+    .home-icon{display: none;}
+
+    .drop-down img{display: none;}
+
     .nav-toggle{
-        display: block;
+        display: inline-block;        
+        position: absolute;
+        right: 3%;        
+        padding: 40px 10px;            
+        
     }
+
 
     nav{
         display: none;        
@@ -219,6 +235,10 @@ nav ul li a,nav ul li a:visited{
         text-decoration: underline;
     }
 
+
+
+
+
 }
 
 
@@ -233,6 +253,15 @@ nav ul li a,nav ul li a:visited{
     .title{
         height: 1000px;
     }
+
+    .nav-toggle{
+        display: inline-block;        
+        position: absolute;
+        right: 3%;        
+        padding: 40px 10px;
+            
+        
+    }
 }
 
 
@@ -244,12 +273,23 @@ nav ul li a,nav ul li a:visited{
 
 
 .title{
-    margin-left: 0.3%;
+    /* margin-left: 0.3%; */
     /* width: 100%; */
     height: 700px;
     background-image: url('../images/bulding1.jpg');  
     background-size: 99.7%;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
+
+    /* for making background-image responsive  */
+
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+
+
     color: #fff;
 }
 
@@ -262,9 +302,9 @@ nav ul li a,nav ul li a:visited{
     line-height: 1.5;
     letter-spacing: 1.5px;
 }
-.slogan h3{
+/* .slogan h3{
 
-}
+} */
 
 
 .title a:link, a:visited{   
@@ -299,13 +339,77 @@ nav ul li a,nav ul li a:visited{
 @media (max-width: 830px){
    
     .title{
-        height: 600px;
-        margin-left: 0.3%;        
-        background-image: url('../images/bulding1.jpg');  
-        background-size: cover;
+        height: 600px;        
+        
     }
 }
 
+@media(max-width: 768px){
+    .title{
+        height: 710px;              
+        
+    }
+
+    .slogan{
+        left: 15px;
+    }
+
+    .button-services{
+        left: 15px;
+    }
+    
+    .button-about-us{
+        left: 60px;
+    }
+
+}
+
+@media(max-width:430px){
+
+    .title{
+        height: 800px;
+                
+        
+    }
+
+    .slogan{        
+        
+        position: relative;
+        top: 160px;
+        left: 10px;
+        
+    }
+    .button-services{
+        width: 200px;
+        display: block;        
+        top:230px;
+        left: 10px;
+    }
+    .button-about-us{ 
+        width: 200px;   
+        top:260px;
+        display: block;
+        left: 10px;
+    }
+    
+
+}
+
+@media(max-width: 380px){
+    .slogan h1{
+        font-size: 2.75rem;
+    }
+}
+
+@media(max-width: 320px)
+{
+    .slogan h1{
+        font-size: 2.5rem;
+    }
+    .slogan h3{
+        font-size: 1.3rem;
+    }
+}
 
 
   /* qualities-section */
@@ -395,8 +499,8 @@ nav ul li a,nav ul li a:visited{
 
 .services-items{
     padding: 10px;
-    margin: 20px auto;    
-    height: 500px;
+    margin: 20px auto 0px auto;    
+    
     width: 500px;    
     text-align: center;
 }
@@ -413,7 +517,41 @@ nav ul li a,nav ul li a:visited{
 
 }
 
+@media(max-width: 505px){
+    .services-items img{
+        margin: 30px auto;
+        display: block;
+        width: 90%;
+    }
+}
 
+
+@media(max-width: 430px){
+    .services-items{
+            
+        /* height: 500px; */
+        width: 100%;    
+        
+    }
+    .services-items img{
+        margin: 30px auto;
+        display: block;
+        width: 90%;
+    }
+
+    /* .services-items h3{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    } */
+    .services-items p{
+        text-align: left;
+        /* margin-left: 15px; */
+        width: 95%;
+        margin-bottom: 30px;
+    
+    }
+
+}
 
 
 /* project-section */
@@ -489,11 +627,32 @@ nav ul li a,nav ul li a:visited{
 
 
 @media (max-width: 830px){
+
+
+    .our-projects{
+        padding: 50px 0px;
+    }
     .our-projects-img-container img{
         display: block;
         margin: 50px auto;
     }
+
+    .our-projects-heading{
+        width: 100%;
+    }
+    h1{
+        display: block;
+        margin: 20px 0px;
+    }
 }
+@media(max-width:440px){
+    .our-projects-img-container img{
+        width: 95%;
+    }
+}
+
+
+
 
 
 /* contact-us section */
@@ -609,4 +768,20 @@ footer{
     height: 120px;
     width: 300px;
     margin:40px 0px 0px 50px;
+}
+
+
+@media (max-width: 768px){
+    .footer-logo{
+        width: 280px;
+        margin: 20px 0px;
+    }
+}
+
+@media(max-width: 430px){
+    .footer-logo {    
+         
+        width: 280px;
+        margin: 30px 0px 0px 0px;
+    }
 }
