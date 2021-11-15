@@ -236,8 +236,14 @@ nav ul li a,nav ul li a:visited{
     }
 
 
+   
+    .drop-down:hover ul{
+        display: none;
+    }
 
-
+    .drop-down:hover ul li{
+        display: none;
+    }
 
 }
 
@@ -276,7 +282,7 @@ nav ul li a,nav ul li a:visited{
     /* margin-left: 0.3%; */
     /* width: 100%; */
     height: 700px;
-    background-image: url('../images/bulding1.jpg');  
+    background-image: url('../images/home1.jpg');  
     background-size: 99.7%;
     /* background-repeat: no-repeat; */
 
@@ -523,6 +529,10 @@ nav ul li a,nav ul li a:visited{
         display: block;
         width: 90%;
     }
+
+    .services-items h3 , .services-items p{
+        width: 95%;
+    }
 }
 
 
@@ -645,6 +655,16 @@ nav ul li a,nav ul li a:visited{
         margin: 20px 0px;
     }
 }
+
+
+@media(max-width: 1440px)
+{
+    .our-projects-img-container img{
+        margin-bottom: 50px;
+    }
+}
+
+
 @media(max-width:440px){
     .our-projects-img-container img{
         width: 95%;
@@ -768,6 +788,13 @@ footer{
     height: 120px;
     width: 300px;
     margin:40px 0px 0px 50px;
+}
+
+@media (max-width: 1024px)
+{
+    .footer-logo{        
+        margin: 20px 0px;
+    } 
 }
 
 

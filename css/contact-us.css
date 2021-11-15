@@ -237,6 +237,13 @@ nav ul li a,nav ul li a:visited{
 
 
 
+    .drop-down:hover ul{
+        display: none;
+    }
+
+    .drop-down:hover ul li{
+        display: none;
+    }
 
 
 }
@@ -332,6 +339,7 @@ nav ul li a,nav ul li a:visited{
     border: 1px solid rgba(56, 56, 56, 0.137);
     margin-bottom: 30px;
     border-radius: 4px;
+    padding: 10px 20px;
 
 }
 
@@ -341,6 +349,7 @@ nav ul li a,nav ul li a:visited{
     margin-bottom: 30px;
     border-radius: 4px;
     resize: vertical;
+    padding: 10px 20px;
 }
 
 
@@ -366,7 +375,7 @@ nav ul li a,nav ul li a:visited{
 
 
 #address-info{
-    /* border: 1px solid blue; */
+    
     height: 400px;
     margin-top: 50px;
     width: 500px;
@@ -381,6 +390,112 @@ nav ul li a,nav ul li a:visited{
 
 
 
+@media(max-width: 768px){
+    .section1{
+        padding: 100px 0px 50px 0px
+    }
+
+
+    .contact-details{
+        margin:100px 0px;
+    }
+
+    .contact-details-sub{
+        margin: 20px;
+        width: 300px;
+        
+    }
+
+    .form-input{
+        width: 95%;       
+    
+    }
+    
+
+    #submit-btn{
+        width: 80%;
+    }
+
+    #address-info{    
+        font-size: 1.2rem;
+        width: 350px;
+        height: 420px;
+
+    }
+
+           
+}
+
+
+
+@media(max-width: 731px){
+
+    .section1{
+        padding: 100px 0px 50px 0px
+    }
+
+    .contact-details-sub{
+        margin: 20px auto;
+        width: 90%;
+        
+    }
+
+    #submit-btn{
+        width: 40%;
+    }
+
+    #contact-form textarea{
+        width: 95%;
+        
+    }
+    
+    #address-info{    
+        margin-top: 50px;
+        font-size: 1.2rem;
+        width: 400px;
+        height: 400px;
+
+    }
+
+}
+
+
+
+
+@media(max-width: 426px){
+
+    .section1{
+        padding: 100px 0px 10px 0px;
+    }
+ 
+
+
+
+
+    .form-input{
+        width: 90%;
+    }
+
+    #address-info{
+
+        width: 90%;
+        font-size: 1.1rem;
+       
+    }
+
+    #submit-btn{
+        width: 60%;
+    }
+
+}
+
+
+
+
+
+
+
+/* footer  */
 
 
 footer{
@@ -454,6 +569,12 @@ footer{
     margin:40px 0px 0px 50px;
 }
 
+@media (max-width: 1024px)
+{
+    .footer-logo{        
+        margin: 20px 0px;
+    } 
+}
 
 @media (max-width: 768px){
     .footer-logo{

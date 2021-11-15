@@ -44,6 +44,8 @@ header{
     height: 120px;
     width: 300px;
 }
+
+
 nav{
     display: flex;
     
@@ -175,7 +177,7 @@ nav ul li a,nav ul li a:visited{
 @media (max-width:850px){
     .logo{    
         margin-left: 0px;    
-        /* margin-right: 0%; */
+       
     }
     .logo img{
         width: 200px;
@@ -228,7 +230,7 @@ nav ul li a,nav ul li a:visited{
         color: #fff;
     }
     nav ul li:hover{
-        background-color:#89b2ec;;
+        background-color:#89b2ec;
         text-decoration: underline;
     }
     nav ul li a:hover{
@@ -238,6 +240,13 @@ nav ul li a,nav ul li a:visited{
 
 
 
+    .drop-down:hover ul{
+        display: none;
+    }
+
+    .drop-down:hover ul li{
+        display: none;
+    }
 
 }
 
@@ -276,6 +285,7 @@ nav ul li a,nav ul li a:visited{
     height:400px;
     width: 100%;
     background-image: url(../images/projects/2.jpg);    
+
     /* for making background-image responsive  */
 
     background-repeat:no-repeat;
@@ -313,9 +323,13 @@ nav ul li a,nav ul li a:visited{
 
 
 
+
+/* commercial  */
+
+
 .commercial{
     padding: 100px 15%;
-    /* height: 940px; */
+   
     width: 100%;
     box-shadow: 5px 5px 5px #babcbed4;
 }
@@ -325,6 +339,7 @@ nav ul li a,nav ul li a:visited{
 .commercial-projects{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
    
 }
 
@@ -345,6 +360,74 @@ nav ul li a,nav ul li a:visited{
 
 
 
+@media(max-width: 1440px){
+    .commercial-projects img {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+
+@media(max-width: 830px){
+    .commercial-projects img {
+        height: 200px;
+        width: 220px;
+        
+    }
+}
+
+@media(max-width: 769px){
+    .commercial-projects img {
+        height: 300px;
+        width: 400px;
+        display: block;
+        margin: 50px auto;
+    }
+    .commercial-projects img:hover {
+        -webkit-transform:scale(1); 
+        transform:scale(1);
+    }
+}
+
+
+@media(max-width: 478px){
+    .commercial{
+        padding: 100px 5%;
+        
+    }
+
+    .commercial-projects img{        
+        margin: 30px auto;
+        height: 250px;
+        width: 300px;
+        
+    }
+    
+    .commercial-projects img {
+        transition:transform 0.25s ease;
+    }
+    
+    .commercial-projects img:hover {
+        -webkit-transform:scale(1); 
+        transform:scale(1);
+    }
+}
+
+
+
+@media(max-width: 321px){
+    .commercial-projects img{        
+        width: 85%;
+    }
+}
+
+
+
+
+
+
+
+/* residential  */
 
 
 
@@ -353,14 +436,22 @@ nav ul li a,nav ul li a:visited{
     /* height: 650px; */
     width: 100%;
     background-color: #e0e0e047;
-}
 
+
+}
+.residential-projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 
 .residential-projects img{
     height: 250px;
     width: 300px;
     margin: 30px 20px;
+
+   
 }
 
 .residential-projects img {
@@ -375,11 +466,76 @@ nav ul li a,nav ul li a:visited{
 
 
 
+@media(max-width: 1440px){
+    .residential-projects img {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+
+
+@media(max-width: 830px){
+    .residential-projects img {
+        height: 200px;
+        width: 220px;
+        
+    }
+}
+
+
+@media(max-width: 769px){
+    .residential-projects img {
+        height: 300px;
+        width: 400px;
+        display: block;
+        margin: 50px auto;
+    }
+    .residential-projects img:hover {
+        -webkit-transform:scale(1); 
+        transform:scale(1);
+    }
+}
+
+@media(max-width: 478px){
+    .residential {
+        padding: 100px 5% 70px 5%;        
+       
+    }
+    
+    
+    
+    .residential-projects img{       
+        margin: 30px auto;        
+            height: 250px;
+            width: 300px;
+            
+        }
+    
+    
+    .residential-projects img {
+        transition:transform 0.25s ease;
+    }
+    
+    .residential-projects img:hover {
+        -webkit-transform:scale(1); 
+        transform:scale(1);
+    }
+
+}
+
+
+@media(max-width: 321px){
+    .residential-projects img{        
+        width: 85%;
+    }
+}
 
 
 
 
-
+/* contact -us */
+ 
 
 .contact-us{
     /* margin: 30px 0px; */
@@ -507,6 +663,12 @@ footer{
     margin:40px 0px 0px 50px;
 }
 
+@media (max-width: 1024px)
+{
+    .footer-logo{        
+        margin: 20px 0px;
+    } 
+}
 
 @media (max-width: 768px){
     .footer-logo{

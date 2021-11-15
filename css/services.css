@@ -29,6 +29,9 @@ p{
 
 
 /* navigation bar */
+
+
+
 header{
     display: flex;
     flex-wrap: wrap;
@@ -91,6 +94,9 @@ nav ul li a,nav ul li a:visited{
     transition: all 0.3s ease-in-out;
     background-color: #6487ba;
 }
+
+
+/* makes hamburger icon for navigation appear at tablet or mobile sizes */
 
 .nav-toggle{
     padding: 50px 10px;
@@ -236,6 +242,13 @@ nav ul li a,nav ul li a:visited{
 
 
 
+    .drop-down:hover ul{
+        display: none;
+    }
+
+    .drop-down:hover ul li{
+        display: none;
+    }
 
 
 }
@@ -264,6 +277,7 @@ nav ul li a,nav ul li a:visited{
 }
 
 
+/* title  */
 
 
 
@@ -296,6 +310,10 @@ nav ul li a,nav ul li a:visited{
 
 
 
+
+
+
+/* section-1 */
 
 
 
@@ -353,8 +371,39 @@ nav ul li a,nav ul li a:visited{
 }
 
 
+@media(max-width: 1134px){
+
+    .section1-services img{   
+        width: 400px;     
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width: 1024px)
+{
+    .section1-services img{        
+        margin-bottom: 50px;
+    }
+}
+@media(max-width: 430px){
+    
+.section1-services img{
+    width: 230px;
+    margin-bottom: 50px;
+}
+
+.section1-services img:hover {
+    -webkit-transform:scale(1); 
+    transform:scale(1);
+}
+
+}
 
 
+
+
+
+/* contact us  */
 
 
 .contact-us{
@@ -408,6 +457,13 @@ nav ul li a,nav ul li a:visited{
     background-color: #ffee52;
     border: 1px solid #faee6f; 
 }
+
+
+
+
+
+
+/* footer  */
 
 
 
@@ -483,6 +539,13 @@ footer{
     margin:40px 0px 0px 50px;
 }
 
+
+@media (max-width: 1024px)
+{
+    .footer-logo{        
+        margin: 20px 0px;
+    } 
+}
 
 @media (max-width: 768px){
     .footer-logo{
