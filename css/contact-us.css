@@ -157,6 +157,11 @@ nav ul li a,nav ul li a:visited{
         width: 250px;
     }
 
+    .home-icon{
+        height: 13px;
+        width: 13px;
+    }
+
     nav ul li a,nav ul li a:visited{
         font-weight: 700;
         color: #6487ba;
@@ -388,7 +393,33 @@ nav ul li a,nav ul li a:visited{
     line-height: 2;
 }
 
+#address-info a{
+    color: #fff;
+    text-decoration: none;
+}
 
+#address-info a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+
+#address-info a:hover{
+    text-decoration: underline;
+}
+
+
+@media(max-width: 1286px){
+    #address-info{    
+        margin: 100px auto;
+
+        }
+
+        .section1{         
+                        
+            padding: 100px 120px 20px 120px;
+            
+        }
+}
 
 @media(max-width: 768px){
     .section1{
@@ -480,6 +511,7 @@ nav ul li a,nav ul li a:visited{
 
         width: 90%;
         font-size: 1.1rem;
+        margin-top: 100px;
        
     }
 

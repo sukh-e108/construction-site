@@ -157,6 +157,11 @@ nav ul li a,nav ul li a:visited{
         width: 250px;
     }
 
+    .home-icon{
+        height: 13px;
+        width: 13px;
+    }
+
     nav ul li a,nav ul li a:visited{
         font-weight: 700;
         color: #6487ba;

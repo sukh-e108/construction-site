@@ -161,6 +161,12 @@ nav ul li a,nav ul li a:visited{
         width: 250px;
     }
 
+
+    .home-icon{
+        height: 13px;
+        width: 13px;
+    }
+
     nav ul li a,nav ul li a:visited{
         font-weight: 700;
         color: #6487ba;
@@ -373,6 +379,72 @@ nav ul li a,nav ul li a:visited{
 .residential-services-items h3{
     margin: 20px 0px;
     letter-spacing: 1.3px;
+
+}
+
+
+@media(max-width: 1440px)
+{
+
+    
+.residential-services-items{
+    height: 230px;
+    width: 350px;
+    text-align: center;   
+    margin-bottom: 50px;
+    border-bottom: 2px solid #ebebeb;
+}
+
+
+}
+
+
+
+@media(max-width: 1000px)
+{
+
+    
+.residential-services-items{
+    height: 230px;
+    width: 300px;
+    text-align: center;   
+    margin-bottom: 50px;
+    border-bottom: 2px solid #ebebeb;
+}
+
+
+.residential-services{
+    
+    width: 90%;
+    margin: 0 auto;
+ 
+}
+
+
+}
+
+
+
+
+@media(max-width: 670px)
+{
+
+    
+.residential-services-items{
+    height: 230px;
+    width: 300px;
+    display: block;
+    margin: 50px auto;
+ 
+}
+
+
+.residential-services{
+    padding: 50px 0px;
+    width: 90%;
+   
+}
+
 
 }
 
