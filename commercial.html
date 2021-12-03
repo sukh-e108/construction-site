@@ -21,24 +21,26 @@
 
 <body>
 
-     <!-- navigation bar -->
+    <!-- navigation bar -->
 
-     <header>
+    <header>
 
-        <div class="logo"><a href="index.html"><img src="images/logo5.png" alt=""></a></div>
+        <div class="logo"><a href="index.html"><img src="images/logo5.png" alt="logo"></a></div>
 
-        <div class="nav-toggle" onclick="myFunction();"><span class="bar"></span>
+        <div class="nav-toggle" id="mobile-menu" >
+            <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
 
-        <nav id="nav">
+        <nav class="nav">
             <ul>
 
-                <li><a href="index.html">HOME<img src="images/home-icon.png" alt="" class="home-icon"></a></li>
+                <li><a href="index.html">HOME<img src="images/home-icon.png" alt="home icon" class="home-icon"></a></li>
                 <li><a href="about-us.html">ABOUT US</a></li>
-                <li class="drop-down"><a href="services.html" >SERVICES<img src="images/drop-drown-arrow2.png" alt=""></a>
-                    <ul>
+                <li class="drop-down"><a href="services.html">SERVICES<img src="images/drop-drown-arrow2.png"
+                            alt="drop down icon">  <i class="arrow down"></i> </a>
+                    <ul class="sub-menu">
                         <li><a href="residential.html">RESIDENTIAL</a></li>
                         <li><a href="commercial.html">COMMERCIAL</a></li>
                     </ul>
@@ -53,6 +55,7 @@
 
 
 
+
     <section class="title">
         <h1>COMMERCIAL <em>SERVICES</em></h1>
     </section>
@@ -61,30 +64,31 @@
         <p>You need a builder to help you deliver an engaging, productive, and cost-effective workplace. Or you may
             be in the market to upgrade you building’s efficiency, lobbies & corridors, accessibility, or
             amenities. BJK Management Ltd offers a complete portfolio of building construction, renovation,
-            infrastructure, and provides a comprehensive plan tailored to each client’s specific needs upon project kickoff. </p>
-    
-            <div class="container">
-                <div class="container-items">
-                    <img src="images/commercial/offices.jpg" alt="">
-                    <h3>OFFICES</h3>
-                </div>
+            infrastructure, and provides a comprehensive plan tailored to each client’s specific needs upon project
+            kickoff. </p>
 
-                <div class="container-items">
-                    <img src="images/commercial/day-care.jpg" alt="">
-                    <h3>DAY CARE</h3>
-                </div>
-
-                <div class="container-items">
-                    <img src="images/commercial/salons.jpg" alt="">
-                    <h3>SALONS</h3>
-                </div>
-                <div class="container-items">
-                    <img src="images/commercial/clinics.jpg" alt="">
-                    <h3>CLINICS</h3>
-                </div>
+        <div class="container">
+            <div class="container-items">
+                <img src="images/commercial/offices.jpg" alt="">
+                <h3>OFFICES</h3>
             </div>
-    
-     </section>
+
+            <div class="container-items">
+                <img src="images/commercial/day-care.jpg" alt="">
+                <h3>DAY CARE</h3>
+            </div>
+
+            <div class="container-items">
+                <img src="images/commercial/salons.jpg" alt="">
+                <h3>SALONS</h3>
+            </div>
+            <div class="container-items">
+                <img src="images/commercial/clinics.jpg" alt="">
+                <h3>CLINICS</h3>
+            </div>
+        </div>
+
+    </section>
 
 
 
@@ -112,14 +116,14 @@
             <div class="footer-container-item">
                 <h3>About Company</h2>
                     <p>BJK management Ltd is a Construction Company that plans, designs, and
-                    constructs residential and commercial projects in the Calgary, Alberta.</p>
+                        constructs residential and commercial projects in the Calgary, Alberta.</p>
             </div>
 
             <div class="footer-container-item">
                 <h3>Contact Info</h3>
                 <ul>
                     <li>
-                        Address: 293 Downtown,<br>Calgary, Canada
+                        Address: Calgary, Canada
                     </li>
                     <li>Ph: 403-771-3702 </li>
                     <li>
@@ -153,13 +157,13 @@
 
     <script type="text/javascript">
 
-        function myFunction() {
+        const menu = document.querySelector('#mobile-menu');
+        const menuLinks = document.querySelector('.nav');
 
-            var navbar = document.getElementById('nav')
-            navbar.classList.toggle('show');
-
-        }
-
+        menu.addEventListener('click', function () {
+            menu.classList.toggle('is-active');
+            menuLinks.classList.toggle('active');
+        })
     </script>
 
 

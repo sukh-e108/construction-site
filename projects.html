@@ -16,29 +16,31 @@
 
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
-    
+
 </head>
 
 <body>
 
-      <!-- navigation bar -->
+    <!-- navigation bar -->
 
-      <header>
+    <header>
 
-        <div class="logo"><a href="index.html"><img src="images/logo5.png" alt=""></a></div>
+        <div class="logo"><a href="index.html"><img src="images/logo5.png" alt="logo"></a></div>
 
-        <div class="nav-toggle" onclick="myFunction();"><span class="bar"></span>
+        <div class="nav-toggle" id="mobile-menu" >
+            <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
 
-        <nav id="nav">
+        <nav class="nav">
             <ul>
 
-                <li><a href="index.html">HOME<img src="images/home-icon.png" alt="" class="home-icon"></a></li>
+                <li><a href="index.html">HOME<img src="images/home-icon.png" alt="home icon" class="home-icon"></a></li>
                 <li><a href="about-us.html">ABOUT US</a></li>
-                <li class="drop-down"><a href="services.html" >SERVICES<img src="images/drop-drown-arrow2.png" alt=""></a>
-                    <ul>
+                <li class="drop-down"><a href="services.html">SERVICES<img src="images/drop-drown-arrow2.png"
+                            alt="drop down icon">  <i class="arrow down"></i> </a>
+                    <ul class="sub-menu">
                         <li><a href="residential.html">RESIDENTIAL</a></li>
                         <li><a href="commercial.html">COMMERCIAL</a></li>
                     </ul>
@@ -53,6 +55,7 @@
 
 
 
+
     <section class="title">
         <h1>PROJECTS</h1>
     </section>
@@ -62,29 +65,29 @@
 
 
     <section class="commercial">
-        
-            <div class="heading">
-                <h2>COMMERICAL</h2>            
-            </div>
 
-            <div class="commercial-projects">
-                <img src="images/projects/commercial1.jpeg" alt="">
-                <img src="images/projects/commercial2.jpeg" alt="">
-                <img src="images/projects/commercial3.jpeg" alt="">
-                <img src="images/projects/commercial4.jpeg" alt="">
-                <img src="images/projects/commercial5.jpeg" alt="">
-            </div>
-           
-    
+        <div class="heading">
+            <h2>COMMERICAL</h2>
+        </div>
+
+        <div class="commercial-projects">
+            <img src="images/projects/commercial1.jpeg" alt="">
+            <img src="images/projects/commercial2.jpeg" alt="">
+            <img src="images/projects/commercial3.jpeg" alt="">
+            <img src="images/projects/commercial4.jpeg" alt="">
+            <img src="images/projects/commercial5.jpeg" alt="">
+        </div>
+
+
     </section>
 
-    
-    <section class="residential">       
+
+    <section class="residential">
 
         <div class="heading">
             <h2>RESIDENTIAL</h2>
         </div>
-        
+
         <div class="residential-projects">
             <img src="images/projects/residential1.jpeg" alt="">
             <img src="images/projects/residential2.jpg" alt="">
@@ -93,7 +96,7 @@
 
         </div>
 
-</section>
+    </section>
 
 
 
@@ -103,34 +106,35 @@
 
         <div class="our-projects-btn" id="contact-us-btn">
 
-            <a href="contact-us.html">CONTACT US <img src="images/message-icon.jpg" alt="" height="15px" width="20px"></a>
+            <a href="contact-us.html">CONTACT US <img src="images/message-icon.jpg" alt="" height="15px"
+                    width="20px"></a>
 
         </div>
     </section>
 
 
 
-    <footer >
+    <footer>
 
         <div class="footer-container">
 
-            <div class="footer-container-item" ><img src="images/logo5.png" alt=""  class="footer-logo" ></div>
+            <div class="footer-container-item"><img src="images/logo5.png" alt="" class="footer-logo"></div>
 
             <div class="footer-container-item">
                 <h3>About Company</h2>
-                <p>BJK management Ltd is a Construction Company that plans, designs, and
-                constructs residential and commercial projects in the Calgary, Alberta.</p>
+                    <p>BJK management Ltd is a Construction Company that plans, designs, and
+                        constructs residential and commercial projects in the Calgary, Alberta.</p>
             </div>
-            
+
             <div class="footer-container-item">
                 <h3>Contact Info</h3>
                 <ul>
                     <li>
-                       Address: 293 Downtown,<br>Calgary, Canada 
+                        Address: Calgary, Canada
                     </li>
                     <li>Ph: 403-771-3702 </li>
                     <li>
-                        Email:  <a href="mailto:Garrygill72@hotmail.com" class="mail-id">Garrygill72@hotmail.com</a>
+                        Email: <a href="mailto:Garrygill72@hotmail.com" class="mail-id">Garrygill72@hotmail.com</a>
                     </li>
                 </ul>
             </div>
@@ -138,12 +142,14 @@
             <div class="footer-container-item">
 
                 <h3>FOLLOW US</h3>
-                <li><a href="#"><img src="images/fb-icon.png" alt="" height="20px" width="20px" class="footer-icons"></a></li>
-                <li><a href="#"><img src="images/insta-icon.png" alt="" height="20px" width="20px" class="footer-icons"></a></li>
+                <li><a href="#"><img src="images/fb-icon.png" alt="" height="20px" width="20px"
+                            class="footer-icons"></a></li>
+                <li><a href="#"><img src="images/insta-icon.png" alt="" height="20px" width="20px"
+                            class="footer-icons"></a></li>
 
             </div>
 
-         
+
 
 
         </div>
@@ -153,17 +159,18 @@
 
     <script type="text/javascript">
 
-        function myFunction() {
+        const menu = document.querySelector('#mobile-menu');
+        const menuLinks = document.querySelector('.nav');
 
-            var navbar = document.getElementById('nav')
-            navbar.classList.toggle('show');
-
-        }
-
+        menu.addEventListener('click', function () {
+            menu.classList.toggle('is-active');
+            menuLinks.classList.toggle('active');
+        })
     </script>
 
 
 
 
 </body>
+
 </html>

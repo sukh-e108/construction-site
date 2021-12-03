@@ -25,24 +25,26 @@
 <body>
 
 
-      <!-- navigation bar -->
+    <!-- navigation bar -->
 
-      <header>
+    <header>
 
-        <div class="logo"><a href="index.html"><img src="images/logo5.png" alt=""></a></div>
+        <div class="logo"><a href="index.html"><img src="images/logo5.png" alt="logo"></a></div>
 
-        <div class="nav-toggle" onclick="myFunction();"><span class="bar"></span>
+        <div class="nav-toggle" id="mobile-menu" >
+            <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
 
-        <nav id="nav">
+        <nav class="nav">
             <ul>
 
-                <li><a href="index.html">HOME<img src="images/home-icon.png" alt="" class="home-icon"></a></li>
+                <li><a href="index.html">HOME<img src="images/home-icon.png" alt="home icon" class="home-icon"></a></li>
                 <li><a href="about-us.html">ABOUT US</a></li>
-                <li class="drop-down"><a href="services.html" >SERVICES<img src="images/drop-drown-arrow2.png" alt=""></a>
-                    <ul>
+                <li class="drop-down"><a href="services.html">SERVICES<img src="images/drop-drown-arrow2.png"
+                            alt="drop down icon">  <i class="arrow down"></i> </a>
+                    <ul class="sub-menu">
                         <li><a href="residential.html">RESIDENTIAL</a></li>
                         <li><a href="commercial.html">COMMERCIAL</a></li>
                     </ul>
@@ -56,14 +58,16 @@
 
 
 
+
     <section class="section1">
-        
+
         <div class="heading">
             <h1>CONTACT US</h1>
         </div>
         <div class="paragraph">
             <p>Interested in partnering with BJK Management Ltd on your next project? Have any
-                general questions or comments about our construction firm in Calgary, Alberta? We’d love to hear from you.
+                general questions or comments about our construction firm in Calgary, Alberta? We’d love to hear from
+                you.
                 Please fill out the form below, and a team member will contact you as soon as possible.</p>
         </div>
 
@@ -71,10 +75,11 @@
 
             <div id="contact-form" class="contact-details-sub">
 
-                <form id="contact-form" method="POST" action="contact-form-handler.php" onsubmit="alert('Message Sent')">
+                <form id="contact-form" method="POST" action="contact-form-handler.php"
+                    onsubmit="alert('Message Sent')">
 
-                    <label for="name"  >Full Name:</label>
-                    <input type="text" name="name" id="" class="form-input"  required>
+                    <label for="name">Full Name:</label>
+                    <input type="text" name="name" id="" class="form-input" required>
 
                     <label for="email">Email:</label>
                     <input type="email" name="email" id="" class="form-input" required>
@@ -85,32 +90,33 @@
                     <label for="">Your Message:</label>
                     <textarea name="message" id="" cols="30" rows="10" required></textarea>
 
-                    
-                    <input type="submit" value="Send Message" id="submit-btn" >
+
+                    <input type="submit" value="Send Message" id="submit-btn">
 
                 </form>
 
             </div>
 
 
-            <div id="address-info" class="contact-details-sub" >
+            <div id="address-info" class="contact-details-sub">
 
-                <p><img src="images/contact-us-img/pngkey.com-smartphone-icon-png-1327781.png" alt="" height="50px" width="50px">
-                <br>
-                
-                Call <a href="tel:403-771-3702">403-771-3702</a>
+                <p><img src="images/contact-us-img/pngkey.com-smartphone-icon-png-1327781.png" alt="" height="50px"
+                        width="50px">
+                    <br>
 
-                <br>
-                <br>
-                Our team has the experience to manage complex, time-sensitive projects. Reach out to us today.
-                <br>
-                <br>
-                Email: <a href="mailto:Garrygill72@hotmail.com ">Garrygill72@hotmail.com </a>           
-                            
-           </p>
+                    Call <a href="tel:403-771-3702">403-771-3702</a>
+
+                    <br>
+                    <br>
+                    Our team has the experience to manage complex, time-sensitive projects. Reach out to us today.
+                    <br>
+                    <br>
+                    Email: <a href="mailto:Garrygill72@hotmail.com ">Garrygill72@hotmail.com </a>
+
+                </p>
 
             </div>
-            
+
         </div>
     </section>
 
@@ -134,14 +140,14 @@
             <div class="footer-container-item">
                 <h3>About Company</h2>
                     <p>BJK management Ltd is a Construction Company that plans, designs, and
-                    constructs residential and commercial projects in the Calgary, Alberta.</p>
+                        constructs residential and commercial projects in the Calgary, Alberta.</p>
             </div>
 
             <div class="footer-container-item">
                 <h3>Contact Info</h3>
                 <ul>
                     <li>
-                        Address: 293 Downtown,<br>Calgary, Canada
+                        Address: Calgary, Canada
                     </li>
                     <li>Ph: 403-771-3702 </li>
                     <li>
@@ -175,12 +181,13 @@
 
     <script type="text/javascript">
 
-        function myFunction() {
+        const menu = document.querySelector('#mobile-menu');
+        const menuLinks = document.querySelector('.nav');
 
-            var navbar = document.getElementById('nav')
-            navbar.classList.toggle('show');
-
-        }
+        menu.addEventListener('click', function () {
+            menu.classList.toggle('is-active');
+            menuLinks.classList.toggle('active');
+        })
 
     </script>
 

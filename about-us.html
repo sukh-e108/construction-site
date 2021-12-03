@@ -27,21 +27,22 @@
 
     <header>
 
-        <div class="logo"><a href="index.html"><img src="images/logo5.png" alt=""></a></div>
+        <div class="logo"><a href="index.html"><img src="images/logo5.png" alt="logo"></a></div>
 
-        <div class="nav-toggle" onclick="myFunction();"><span class="bar"></span>
+        <div class="nav-toggle" id="mobile-menu">
+            <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
 
-        <nav id="nav">
+        <nav class="nav">
             <ul>
 
-                <li><a href="index.html">HOME<img src="images/home-icon.png" alt="home ico " class="home-icon"></a></li>
+                <li><a href="index.html">HOME<img src="images/home-icon.png" alt="home icon" class="home-icon"></a></li>
                 <li><a href="about-us.html">ABOUT US</a></li>
                 <li class="drop-down"><a href="services.html">SERVICES<img src="images/drop-drown-arrow2.png"
-                            alt="drop down icon"></a>
-                    <ul>
+                            alt="drop down icon"> <i class="arrow down"></i> </a>
+                    <ul class="sub-menu">
                         <li><a href="residential.html">RESIDENTIAL</a></li>
                         <li><a href="commercial.html">COMMERCIAL</a></li>
                     </ul>
@@ -98,7 +99,8 @@
 
             <div>
                 <h3>OUR VISION</h3>
-                <p>We deliver quality, cost effective construction and building services for successful long term results.</p>
+                <p>We deliver quality, cost effective construction and building services for successful long term
+                    results.</p>
             </div>
         </div>
 
@@ -243,13 +245,16 @@
 
     <script type="text/javascript">
 
-        function myFunction() {
 
-            var navbar = document.getElementById('nav')
-            navbar.classList.toggle('show');
+        const menu = document.querySelector('#mobile-menu');
+        const menuLinks = document.querySelector('.nav');
 
-        }
+        menu.addEventListener('click', function () {
+            menu.classList.toggle('is-active');
+            menuLinks.classList.toggle('active');
+        })
 
+        
     </script>
 
 
