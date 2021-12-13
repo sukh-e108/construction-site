@@ -350,7 +350,7 @@ nav ul li a,nav ul li a:visited{
 
 
 .section1{
-    /* height: 1100px; */
+    
     width: 100%;
     background-color: #e0e0e047;
     padding: 100px 120px 50px 120px;
@@ -366,13 +366,16 @@ nav ul li a,nav ul li a:visited{
     border-right: 0px;
     text-align: center;
     color: #413f3f;
+    width: 90%;
+    margin: 0px auto 100px auto;
 }
 
 .paragraph{
     margin: 50px 30px;
     font-size: 1.5rem;
     color: #413f3fcf;
-    /* text-align: center; */
+    width: 90%;
+    margin: 0px auto;
 }
 
 .contact-details{

@@ -392,7 +392,7 @@ nav ul li a,nav ul li a:visited{
 
 
 .section1-sub{
-    width: 80%;
+    width: 65%;
     margin: 0px auto;
 }
 
@@ -406,7 +406,7 @@ nav ul li a,nav ul li a:visited{
 
 
 .section1-services{
-    width: 80%;    
+    width: 60%;    
     margin: 100px auto 20px auto;
     display: flex;
     flex-wrap: wrap;
@@ -432,6 +432,21 @@ nav ul li a,nav ul li a:visited{
 .section1-services img:hover {
     -webkit-transform:scale(1.5); /* or some other value */
     transform:scale(1.5);
+}
+
+
+
+
+
+
+
+
+@media(max-width: 1652px){
+
+     .section1-services img{   
+        width: 400px;     
+        margin-bottom: 50px;
+    }
 }
 
 

@@ -416,6 +416,7 @@ nav ul li a,nav ul li a:visited{
 }
 
 .container{
+    padding-top: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

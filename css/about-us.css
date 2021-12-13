@@ -645,7 +645,7 @@ nav ul li a,nav ul li a:visited{
     padding: 8% 10%;    
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 
@@ -686,7 +686,7 @@ nav ul li a,nav ul li a:visited{
 } 
 
 
-@media(max-width: 1024px){
+@media(max-width: 1205px){
     .section2-items{
         margin: 40px 0px;
     }
@@ -748,7 +748,7 @@ nav ul li a,nav ul li a:visited{
 .section3-info{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
@@ -782,6 +782,11 @@ nav ul li a,nav ul li a:visited{
 }
 
 @media(max-width: 768px){
+
+    .section3{
+        padding-top: 100px;
+    }
+
     .section3-info div{
         margin: 40px;
     }
@@ -793,9 +798,6 @@ nav ul li a,nav ul li a:visited{
     }
 
 }
-
-
-
 
 
 

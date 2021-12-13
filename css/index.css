@@ -499,7 +499,7 @@ nav ul li a,nav ul li a:visited{
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content:space-around;
     width: 60%;
     margin: 50px auto;
     color: #0b0b0beb;
@@ -670,6 +670,7 @@ nav ul li a,nav ul li a:visited{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
 }
 
@@ -705,6 +706,8 @@ nav ul li a,nav ul li a:visited{
     height: 20px;
     padding-top: 5px;
 }
+
+
 
 
 @media (max-width: 830px){

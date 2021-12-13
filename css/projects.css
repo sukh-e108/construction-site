@@ -396,7 +396,7 @@ nav ul li a,nav ul li a:visited{
 
 
 .commercial{
-    padding: 100px 15%;
+    padding: 100px 15% 30px 15%;
    
     width: 100%;
     box-shadow: 5px 5px 5px #babcbed4;
@@ -407,14 +407,14 @@ nav ul li a,nav ul li a:visited{
 .commercial-projects{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
    
 }
 
 .commercial-projects img{
     height: 250px;
     width: 300px;
-    margin: 30px 20px;
+    margin: 30px 20px 100px 20px;
 }
 
 .commercial-projects img {
@@ -422,8 +422,8 @@ nav ul li a,nav ul li a:visited{
 }
 
 .commercial-projects img:hover {
-    -webkit-transform:scale(2); 
-    transform:scale(2);
+    -webkit-transform:scale(1.5); 
+    transform:scale(1.5);
 }
 
 
@@ -510,7 +510,7 @@ nav ul li a,nav ul li a:visited{
 .residential-projects{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
@@ -527,8 +527,8 @@ nav ul li a,nav ul li a:visited{
 }
 
 .residential-projects img:hover {
-    -webkit-transform:scale(2); 
-    transform:scale(2);
+    -webkit-transform:scale(1.5); 
+    transform:scale(1.5);
 }
 
 
