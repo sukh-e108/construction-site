@@ -21,13 +21,13 @@
 
 <body>
 
-    <!-- navigation bar -->
 
+    <!-- navigation bar -->
     <header>
 
         <div class="logo"><a href="index.html"><img src="images/logo5.png" alt="logo"></a></div>
 
-        <div class="nav-toggle" id="mobile-menu" >
+        <div class="nav-toggle" id="mobile-menu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -39,8 +39,8 @@
                 <li><a href="index.html">HOME<img src="images/home-icon.png" alt="home icon" class="home-icon"></a></li>
                 <li><a href="about-us.html">ABOUT US</a></li>
                 <li class="drop-down"><a href="services.html">SERVICES<img src="images/drop-drown-arrow2.png"
-                            alt="drop down icon">  <i class="arrow down"></i> </a>
-                    <ul class="sub-menu">
+                            alt="drop down icon"> </a><i class="arrow down" id="dropdown-arrow"></i>
+                    <ul class="sub-menu" id="sub-menu">
                         <li><a href="residential.html">RESIDENTIAL</a></li>
                         <li><a href="commercial.html">COMMERCIAL</a></li>
                     </ul>
@@ -54,14 +54,16 @@
 
 
 
-
+    <!-- title  -->
 
     <section class="title">
         <h1>COMMERCIAL <em>SERVICES</em></h1>
     </section>
 
 
-    
+
+
+    <!-- section-1  -->
 
     <section class="section1">
         <p>You need a builder to help you deliver an engaging, productive, and cost-effective workplace. Or you may
@@ -96,6 +98,8 @@
 
 
 
+    <!-- contact-us  -->
+
     <section class="contact-us">
         <h2>WE CAN HELP BUILD YOUR PROJECT!</h2>
         <h3>TELL US ABOUT YOUR PROJECT</h3>
@@ -109,6 +113,8 @@
     </section>
 
 
+
+    <!-- footer  -->
 
     <footer>
 
@@ -160,6 +166,9 @@
 
     <script type="text/javascript">
 
+
+        // for making navbar responsive
+
         const menu = document.querySelector('#mobile-menu');
         const menuLinks = document.querySelector('.nav');
 
@@ -167,6 +176,28 @@
             menu.classList.toggle('is-active');
             menuLinks.classList.toggle('active');
         })
+
+
+
+        const subMenu = document.getElementById('sub-menu');
+        const dropdownArrow = document.getElementById('dropdown-arrow');
+
+        dropdownArrow.addEventListener('click', function subMenuToggle() {
+            if (subMenu.style.display != 'none') {
+                subMenu.style.display = 'none';
+                dropdownArrow.style.transform = 'rotate(45deg)';
+                dropdownArrow.style.top = '-2px';
+            }
+
+            else {
+                subMenu.style.display = 'block';
+                dropdownArrow.style.transform = 'rotate(-135deg)';
+                dropdownArrow.style.top = '2px';
+            }
+        }
+        )
+
+
     </script>
 
 

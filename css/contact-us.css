@@ -3,31 +3,41 @@
     padding: 0px;
     margin: 0px;
 }
+
 body{
     margin: 0;
     padding: 0;
     
 }
+
 h1{
     font-size: 3.2rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
 }
+
 h2{
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
 }
+
 h3{
     font-size: 1.3rem;
     font-family: 'Montserrat', sans-serif;
 }
+
 p{
     font-family:'Ubuntu', sans-serif ;
     line-height: 1.5;
 }
 
 
+
+
+
 /* navigation bar */
+
+
 
 header{
     display: flex;
@@ -43,6 +53,7 @@ header{
     height: 120px;
     width: 300px;
 }
+
 nav{
     display: flex;
     
@@ -55,9 +66,7 @@ nav ul{
 }
 
 nav ul li{
-    display: inline-block;
-    
-    
+    display: inline-block;       
     
 }
 
@@ -66,7 +75,7 @@ nav ul li:hover{
 }
 
 nav ul li a,nav ul li a:visited{
-    /* font-weight: 700; */
+    
     color: #6487ba;
     font-size: 1.2rem;
     text-decoration: none;
@@ -106,9 +115,12 @@ nav ul li a,nav ul li a:visited{
 
 .drop-down ul{
     display: none;
+}
+.sub-menu{
+    display: none;
     position: absolute;
     background-color: #fff;
-    /* top: 28px; */
+    
 }
 
 .drop-down:hover ul{
@@ -124,24 +136,24 @@ nav ul li a,nav ul li a:visited{
 
 .drop-down ul li a{
     font-size: 1rem;
-    padding:25px 17px ;
+    padding:25px 17px;
 }
 
 
 
 
 .arrow {
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-    /* margin-left: 20px; */
+    border: solid #fff;
+    border-width: 0 4px 4px 0;    
+    padding: 4px;
+    /* margin-left: 20px; */    
     display: none;
   }
   .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
   }
+
 
 
 @media (max-width: 1310px){
@@ -161,6 +173,7 @@ nav ul li a,nav ul li a:visited{
 
 
 @media (max-width: 1024px){
+
     .logo{
         margin-left: 0px;
         margin-right: 5%;
@@ -194,7 +207,7 @@ nav ul li a,nav ul li a:visited{
 @media (max-width:850px){
     .logo{    
         margin-left: 0px;    
-        /* margin-right: 0%; */
+       
     }
     .logo img{
         width: 200px;
@@ -260,11 +273,13 @@ nav ul li a,nav ul li a:visited{
 
 
     nav ul li{
-        display: block;       
+        display: block;   
+               
         
     }
     nav ul li a,nav ul li a:visited{
         color: #fff;
+        
     }
     nav ul li:hover{
         background-color:#89b2ec;
@@ -275,11 +290,14 @@ nav ul li a,nav ul li a:visited{
     }
 
 
+    .drop-down:hover ul{
+        display: none;
+    }
    
     .drop-down .sub-menu{
         position: relative;
         
-        display: block;
+        display: none;
         color: #fff;
     }
 
@@ -301,13 +319,10 @@ nav ul li a,nav ul li a:visited{
 
 
     .arrow {
-        border: solid #fff;
-        border-width: 0 3px 3px 0;
         display: inline-block;
-        padding: 3px;
         position: relative;
-        top: -3px;
-        left: 15px;
+        top: -2px;
+        left: 30px;
       }
 
     .down {
@@ -346,7 +361,7 @@ nav ul li a,nav ul li a:visited{
 
 
 
-
+/* section1 */
 
 
 .section1{
@@ -382,7 +397,7 @@ nav ul li a,nav ul li a:visited{
     margin: 100px 30px;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
+    
 }
 
 
@@ -489,12 +504,12 @@ nav ul li a,nav ul li a:visited{
 
 @media(max-width: 768px){
     .section1{
-        padding: 100px 0px 50px 0px
+        padding: 100px 0px 20px 0px
     }
 
 
     .contact-details{
-        margin:100px 0px;
+        margin: 100px 0px 10px 0px
     }
 
     .contact-details-sub{
@@ -528,7 +543,7 @@ nav ul li a,nav ul li a:visited{
 @media(max-width: 731px){
 
     .section1{
-        padding: 100px 0px 50px 0px
+        padding: 100px 0px 0px 0px
     }
 
     .contact-details-sub{

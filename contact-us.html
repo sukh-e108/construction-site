@@ -27,7 +27,7 @@
 
     <!-- navigation bar -->
 
-    <header>
+    < <header>
 
         <div class="logo"><a href="index.html"><img src="images/logo5.png" alt="logo"></a></div>
 
@@ -43,8 +43,8 @@
                 <li><a href="index.html">HOME<img src="images/home-icon.png" alt="home icon" class="home-icon"></a></li>
                 <li><a href="about-us.html">ABOUT US</a></li>
                 <li class="drop-down"><a href="services.html">SERVICES<img src="images/drop-drown-arrow2.png"
-                            alt="drop down icon">  <i class="arrow down"></i> </a>
-                    <ul class="sub-menu">
+                            alt="drop down icon">   </a><i class="arrow down" id="dropdown-arrow"></i>
+                    <ul class="sub-menu" id="sub-menu">
                         <li><a href="residential.html">RESIDENTIAL</a></li>
                         <li><a href="commercial.html">COMMERCIAL</a></li>
                     </ul>
@@ -56,6 +56,10 @@
         </nav>
     </header>
 
+
+    
+
+    <!-- section1  -->
 
 
 
@@ -122,12 +126,7 @@
 
 
 
-
-
-
-
-
-
+    <!-- footer -->
 
 
 
@@ -181,6 +180,11 @@
 
     <script type="text/javascript">
 
+
+
+        // for making navbar responsive
+
+
         const menu = document.querySelector('#mobile-menu');
         const menuLinks = document.querySelector('.nav');
 
@@ -188,6 +192,26 @@
             menu.classList.toggle('is-active');
             menuLinks.classList.toggle('active');
         })
+
+
+
+        const subMenu = document.getElementById('sub-menu');
+        const dropdownArrow = document.getElementById('dropdown-arrow');
+
+        dropdownArrow.addEventListener('click', function subMenuToggle() {
+            if (subMenu.style.display != 'none') {
+                subMenu.style.display = 'none';
+                dropdownArrow.style.transform = 'rotate(45deg)';
+                dropdownArrow.style.top = '-2px';
+            }
+
+            else {
+                subMenu.style.display = 'block';
+                dropdownArrow.style.transform = 'rotate(-135deg)';
+                dropdownArrow.style.top = '2px';
+            }
+        }
+        )
 
     </script>
 

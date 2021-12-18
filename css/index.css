@@ -3,24 +3,29 @@
     padding: 0px;
     margin: 0px;
 }
+
 body{
     margin: 0;
     padding: 0;
     
 }
+
 h1{
     font-size: 3.2rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
 }
+
 h2{
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
 }
+
 h3{
     font-size: 1.3rem;
     font-family: 'Montserrat', sans-serif;
 }
+
 p{
     font-family:'Ubuntu', sans-serif ;
     line-height: 1.5;
@@ -29,6 +34,8 @@ p{
 
 
 /* navigation bar */
+
+
 
 header{
     display: flex;
@@ -40,10 +47,12 @@ header{
     margin-right: 15%;
     margin-left: 7%;
 }
+
 .logo img{
     height: 120px;
     width: 300px;
 }
+
 nav{
     display: flex;
     
@@ -56,9 +65,7 @@ nav ul{
 }
 
 nav ul li{
-    display: inline-block;
-    
-    
+    display: inline-block;       
     
 }
 
@@ -67,7 +74,7 @@ nav ul li:hover{
 }
 
 nav ul li a,nav ul li a:visited{
-    /* font-weight: 700; */
+    
     color: #6487ba;
     font-size: 1.2rem;
     text-decoration: none;
@@ -107,9 +114,13 @@ nav ul li a,nav ul li a:visited{
 
 .drop-down ul{
     display: none;
+}
+
+.sub-menu{
+    display: none;
     position: absolute;
     background-color: #fff;
-    /* top: 28px; */
+    
 }
 
 .drop-down:hover ul{
@@ -125,43 +136,45 @@ nav ul li a,nav ul li a:visited{
 
 .drop-down ul li a{
     font-size: 1rem;
-    padding:25px 17px ;
+    padding:25px 17px;
 }
 
 
 
 
 .arrow {
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-    /* margin-left: 20px; */
+    border: solid #fff;
+    border-width: 0 4px 4px 0;    
+    padding: 4px;        
     display: none;
   }
+
   .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
   }
 
 
+
 @media (max-width: 1310px){
+
     .logo{
         margin-left: 2%;
         margin-right: 10%;
     }
+
     nav ul li a,nav ul li a:visited{
         font-weight: 700;
         color: #6487ba;
         font-size: 1.1rem;
         
-        padding: 40px 10px;
-        
+        padding: 40px 10px;        
     }
 }
 
 
 @media (max-width: 1024px){
+
     .logo{
         margin-left: 0px;
         margin-right: 5%;
@@ -185,22 +198,29 @@ nav ul li a,nav ul li a:visited{
         padding: 40px 10px;
         
     }
+
     .drop-down ul li a{
         font-size: 0.9rem;
         padding:25px 12px ;
     }
+
 }
 
 
 @media (max-width:850px){
+
     .logo{    
         margin-left: 0px;    
-        /* margin-right: 0%; */
+        
     }
+
     .logo img{
+
         width: 200px;
     }
+
     nav ul li a,nav ul li a:visited{
+
         font-weight: 700;
         
         font-size: 1rem;
@@ -222,6 +242,7 @@ nav ul li a,nav ul li a:visited{
     .drop-down img{display: none;}
 
     .nav-toggle{
+
         display: inline-block;        
         position: absolute;
         right: 3%;        
@@ -261,11 +282,13 @@ nav ul li a,nav ul li a:visited{
 
 
     nav ul li{
-        display: block;       
+        display: block;   
+               
         
     }
     nav ul li a,nav ul li a:visited{
         color: #fff;
+        
     }
     nav ul li:hover{
         background-color:#89b2ec;
@@ -276,11 +299,14 @@ nav ul li a,nav ul li a:visited{
     }
 
 
+    .drop-down:hover ul{
+        display: none;
+    }
    
     .drop-down .sub-menu{
         position: relative;
         
-        display: block;
+        display: none;
         color: #fff;
     }
 
@@ -290,11 +316,13 @@ nav ul li a,nav ul li a:visited{
         background-color: #a9ccfc;
        
     }
+
     .sub-menu li:hover {
        
         background-color: #a9ccfc;
        
     }
+
     .sub-menu li a{
         position: relative;
         left: 30px;
@@ -302,13 +330,10 @@ nav ul li a,nav ul li a:visited{
 
 
     .arrow {
-        border: solid #fff;
-        border-width: 0 3px 3px 0;
         display: inline-block;
-        padding: 3px;
         position: relative;
-        top: -3px;
-        left: 15px;
+        top: -2px;
+        left: 30px;
       }
 
     .down {
@@ -322,6 +347,7 @@ nav ul li a,nav ul li a:visited{
 
 
 @media (max-width: 440px){
+
     .logo{
         margin-left: 0px;
         margin-right: 2%;
@@ -350,12 +376,11 @@ nav ul li a,nav ul li a:visited{
 
 
 .title{
-    /* margin-left: 0.3%; */
-    /* width: 100%; */
+    
     height: 700px;
     background-image: url('../images/home1.jpg');  
     background-size: 99.7%;
-    /* background-repeat: no-repeat; */
+    
 
     /* for making background-image responsive  */
 
@@ -379,9 +404,7 @@ nav ul li a,nav ul li a:visited{
     line-height: 1.5;
     letter-spacing: 1.5px;
 }
-/* .slogan h3{
 
-} */
 
 
 .title a:link, a:visited{   
@@ -395,7 +418,7 @@ nav ul li a,nav ul li a:visited{
     font-size: 0.9rem;
     background-color: #ffee52;
     border: 1px solid #faee6f; 
-     /* rgba(255, 236, 35, 1) */
+    
 
 }
  
@@ -406,6 +429,7 @@ nav ul li a,nav ul li a:visited{
     top:290px;
     left: 120px;
 }
+
 .button-about-us{
     position: relative;
     top:290px;
@@ -422,6 +446,7 @@ nav ul li a,nav ul li a:visited{
 }
 
 @media(max-width: 768px){
+
     .title{
         height: 710px;              
         
@@ -473,6 +498,7 @@ nav ul li a,nav ul li a:visited{
 }
 
 @media(max-width: 380px){
+
     .slogan h1{
         font-size: 2.75rem;
     }
@@ -487,6 +513,8 @@ nav ul li a,nav ul li a:visited{
         font-size: 1.3rem;
     }
 }
+
+
 
 
   /* qualities-section */
@@ -517,12 +545,13 @@ nav ul li a,nav ul li a:visited{
 }
 
 .items{
-    /* padding: 0 30px; */
+    
     text-align: center;
     width: 250px;
 }
 
 @media (max-width: 1260px){
+
     .items{
         margin-bottom: 50px;
     }
@@ -530,12 +559,14 @@ nav ul li a,nav ul li a:visited{
 
 
 @media (max-width: 1024px){
+
     .items{
         margin-bottom: 50px;
     }
 }
 
 @media (max-width: 830px){
+
     .items{
         display: block;
         margin: 50px auto;
@@ -547,7 +578,7 @@ nav ul li a,nav ul li a:visited{
 
 
 .services{
-    /* height: 800px; */
+    
     width: 100%;
     background-color: #89b2ec;
     color:#fff;
@@ -563,6 +594,7 @@ nav ul li a,nav ul li a:visited{
     flex-direction: row;
     border-width: 5%;
 }
+
 .services h1{
     width: 100%;
     text-align: center;
@@ -594,7 +626,9 @@ nav ul li a,nav ul li a:visited{
 
 }
 
+
 @media(max-width: 505px){
+
     .services-items img{
         margin: 30px auto;
         display: block;
@@ -608,22 +642,19 @@ nav ul li a,nav ul li a:visited{
 
 
 @media(max-width: 430px){
-    .services-items{
-            
-        /* height: 500px; */
+    .services-items{            
+        
         width: 100%;    
         
     }
+
     .services-items img{
         margin: 30px auto;
         display: block;
         width: 90%;
     }
 
-    /* .services-items h3{
-        margin-top: 40px;
-        margin-bottom: 40px;
-    } */
+  
     .services-items p{
         text-align: left;
         /* margin-left: 15px; */
@@ -642,7 +673,7 @@ nav ul li a,nav ul li a:visited{
 
 .our-projects{
     margin: 30px 0px;
-    /* height: 800px; */
+    
     width: 100%;
     background-color: #fff;
     border: 2px solid #f1f1f1;
@@ -658,15 +689,14 @@ nav ul li a,nav ul li a:visited{
     text-align: center;    
 }
 .our-projects-heading h3{
-    /* margin: 0px auto; */
+    
     letter-spacing: 2px;
     color: #f46111c7;
 }
 
 .our-projects-img-container{
     margin: 50px 0px 100px 0px;   
-    /* height: 470px; */
-    /* width: 80%; */
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -683,7 +713,7 @@ nav ul li a,nav ul li a:visited{
 
 .our-projects-btn{
     margin-top: 20px;
-    /* position: relative; */
+    
     text-align: center;
 }
 
@@ -755,8 +785,7 @@ nav ul li a,nav ul li a:visited{
 
 
 .contact-us{
-    /* margin: 30px 0px; */
-    /* height: 400px; */
+    
     width: 100%;
     padding-bottom: 50px;
     background-color:  #89b2ec;
@@ -794,7 +823,7 @@ nav ul li a,nav ul li a:visited{
 
 
 footer{
-    /* height: 300px; */
+    
     width: 100%;
     color: black;
     background-color: #fff;
@@ -803,7 +832,7 @@ footer{
 .footer-container{
     margin: 30px 0px;
     border:2px solid #f1f1f1; 
-    /* height: 270px; */
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
