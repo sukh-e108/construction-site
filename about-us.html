@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BJK Management Ltd is a Construction Company that plans, designs, and constructs residential and commercial
-        projects in the Calgary, Alberta.</title>
+        projects in Calgary, Alberta.</title>
+        
     <link rel="stylesheet" href="css/about-us.css">
+    <link rel="stylesheet" href="css/navbarAndFooter.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +29,7 @@
 
     <header>
 
-        <div class="logo"><a href="index.html"><img src="images/logo5.png" alt="logo"></a></div>
+        <div class="logo"><a href="index.html"><img src="images/logo.jpeg" alt="logo"></a></div>
 
         <div class="nav-toggle" id="mobile-menu">
             <span class="bar"></span>
@@ -38,10 +40,9 @@
         <nav class="nav">
             <ul>
 
-                <li><a href="index.html">HOME<img src="images/home-icon.png" alt="home icon" class="home-icon"></a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="about-us.html">ABOUT US</a></li>
-                <li class="drop-down"><a href="services.html">SERVICES<img src="images/drop-drown-arrow2.png"
-                            alt="drop down icon"> </a><i class="arrow down" id="dropdown-arrow"></i>
+                <li class="drop-down"><a href="services.html">SERVICES</a><i class="arrow down" id="dropdown-arrow"></i>
                     <ul class="sub-menu" id="sub-menu">
                         <li><a href="residential.html">RESIDENTIAL</a></li>
                         <li><a href="commercial.html">COMMERCIAL</a></li>
@@ -53,6 +54,7 @@
             </ul>
         </nav>
     </header>
+
 
 
 
@@ -76,7 +78,7 @@
                 <h2>We Are BJK Management Ltd.</h2>
                 <p>BJK Management Ltd is a construction company based in Calgary, Alberta. We provide exceptional
                     services
-                    and solutions to many of the city’s businesses, building managers, landlords,cultural centers,
+                    and solutions to many of the city's businesses, building managers, landlords,cultural centers,
                     start-ups, retail
                     and more. Our goal is to bring each client’s vision to life by
                     focusing on all aspects of planning and executing building improvements and fit-outs from start to
@@ -117,7 +119,7 @@
 
             <div>
                 <h3>OUR MISSION</h3>
-                <p>We commit to provide our customers with a cost effective solution for their construction and
+                <p>We commit to provide our customers with  cost effective solutions for their construction and
                     remodelling needs</p>
             </div>
         </div>
@@ -128,8 +130,7 @@
             <div>
                 <h3>OUR VALUES</h3>
                 <p>Our company is dedicated to customer success delivering building and renovation services to satisfy
-                    the
-                    customer needs.</p>
+                    the customer's needs.</p>
             </div>
         </div>
 
@@ -234,7 +235,7 @@
                     </li>
                     <li>Ph: 403-771-3702 </li>
                     <li>
-                        Email: <a href="mailto:Garrygill72@hotmail.com" class="mail-id">Garrygill72@hotmail.com</a>
+                        Email: bjkmanagementltd@hotmail.com
                     </li>
                 </ul>
             </div>
@@ -259,44 +260,7 @@
 
 
 
-
-
-    <script type="text/javascript">
-
-
-        // for making navbar responsive
-
-
-        const menu = document.querySelector('#mobile-menu');
-        const menuLinks = document.querySelector('.nav');
-
-        menu.addEventListener('click', function () {
-            menu.classList.toggle('is-active');
-            menuLinks.classList.toggle('active');
-        })
-
-
-
-        const subMenu = document.getElementById('sub-menu');
-        const dropdownArrow = document.getElementById('dropdown-arrow');
-
-        dropdownArrow.addEventListener('click', function subMenuToggle() {
-            if (subMenu.style.display != 'none') {
-                subMenu.style.display = 'none';
-                dropdownArrow.style.transform = 'rotate(45deg)';
-                dropdownArrow.style.top = '-2px';
-            }
-
-            else {
-                subMenu.style.display = 'block';
-                dropdownArrow.style.transform = 'rotate(-135deg)';
-                dropdownArrow.style.top = '2px';
-            }
-        }
-        )
-
-
-    </script>
+    <script src="js/nav.js"></script>
 
 
 

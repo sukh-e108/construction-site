@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BJK Management Ltd | Construction Company that provide exceptional services and solutions to your residential
-        and commercial needs.</title>
+    <title> Construction company in Calgary - BJK Management Ltd.</title>
     <meta name="description"
         content="BJK management Ltd is a Construction Company that plans, designs, and
-    constructs residential and commercial projects in the Calgary, Alberta. We provide exceptional services and solutions to many of the city’s businesses, building managers, landlords,cultural centers, start-ups, retail and more">
+    constructs residential and commercial projects in the Calgary, Alberta. We provide exceptional services and solutions to many of the city’s businesses, building managers, landlords, cultural centers, start-ups, retail and more">
+
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navbarAndFooter.css">
 
     <meta name="keywords"
-        content="construction, building contractors near me, homes, offices, buildings,construction companies near me, construction companies, residential, commercial, Calgary, Alberta, Landscaping, renovation, remodelling,home remodeling near me, rebuilding, salons, daycare, houses, Homes in Calgary">
+        content="BJK, bjk , BJK MAMMAGEMENT, bjk management, Bjk Management, construction, contractors near me, homes, offices, buildings,construction companies near me, Calgary homes, building companies in calgary, construction companies, residential, commercial, Calgary, Alberta, Landscaping, office construction, office remodelling, office renovation, commercial contractor,  renovation, remodelling,home remodeling near me, rebuilding, salons, daycare, houses, Homes in Calgary">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,9 +35,9 @@
 
     <header>
 
-        <div class="logo"><a href="index.html"><img src="images/logo5.png" alt="logo"></a></div>
+        <div class="logo"><a href="index.html"><img src="images/logo.jpeg" alt="logo"></a></div>
 
-        <div class="nav-toggle" id="mobile-menu" >
+        <div class="nav-toggle" id="mobile-menu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -45,10 +46,9 @@
         <nav class="nav">
             <ul>
 
-                <li><a href="index.html">HOME<img src="images/home-icon.png" alt="home icon" class="home-icon"></a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="about-us.html">ABOUT US</a></li>
-                <li class="drop-down"><a href="services.html">SERVICES<img src="images/drop-drown-arrow2.png"
-                            alt="drop down icon">   </a><i class="arrow down" id="dropdown-arrow"></i>
+                <li class="drop-down"><a href="services.html">SERVICES</a><i class="arrow down" id="dropdown-arrow"></i>
                     <ul class="sub-menu" id="sub-menu">
                         <li><a href="residential.html">RESIDENTIAL</a></li>
                         <li><a href="commercial.html">COMMERCIAL</a></li>
@@ -173,9 +173,9 @@
 
 
 
-    
 
-     <!-- it links to contact us page -->
+
+    <!-- it links to contact us page -->
 
 
     <section class="contact-us">
@@ -184,7 +184,7 @@
 
 
 
-       
+
 
         <div class="our-projects-btn" id="contact-us-btn">
 
@@ -218,7 +218,7 @@
                     </li>
                     <li>Ph: 403-771-3702 </li>
                     <li>
-                        Email: <a href="mailto:Garrygill72@hotmail.com" class="mail-id">Garrygill72@hotmail.com</a>
+                        Email: bjkmanagementltd@hotmail.com
                     </li>
                 </ul>
             </div>
@@ -241,44 +241,9 @@
 
 
 
+    <script src="js/nav.js"></script>
 
-    <script type="text/javascript">
-
-      // for making navbar responsive
-
-        const menu = document.querySelector('#mobile-menu');
-        const menuLinks = document.querySelector('.nav');
-
-        menu.addEventListener('click', function() {
-            menu.classList.toggle('is-active');
-            menuLinks.classList.toggle('active');
-            })
-
-
-
-            const subMenu = document.getElementById('sub-menu');
-            const dropdownArrow  = document.getElementById('dropdown-arrow');
-
-            dropdownArrow.addEventListener('click', function subMenuToggle(){
-                if(subMenu.style.display != 'none')
-                {
-                    subMenu.style.display = 'none';
-                    dropdownArrow.style.transform = 'rotate(45deg)';
-                    dropdownArrow.style.top = '-2px';
-                }
-
-                else{
-                    subMenu.style.display = 'block';
-                    dropdownArrow.style.transform = 'rotate(-135deg)';
-                    dropdownArrow.style.top = '2px';
-                }
-            }
-            )
-
-
-
-
-    </script>
+    
 
 </body>
 

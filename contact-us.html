@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/contact-us.css">
+    <link rel="stylesheet" href="css/navbarAndFooter.css">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,11 +29,11 @@
 
     <!-- navigation bar -->
 
-    < <header>
+    <header>
 
-        <div class="logo"><a href="index.html"><img src="images/logo5.png" alt="logo"></a></div>
+        <div class="logo"><a href="index.html"><img src="images/logo.jpeg" alt="logo"></a></div>
 
-        <div class="nav-toggle" id="mobile-menu" >
+        <div class="nav-toggle" id="mobile-menu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -40,18 +42,17 @@
         <nav class="nav">
             <ul>
 
-                <li><a href="index.html">HOME<img src="images/home-icon.png" alt="home icon" class="home-icon"></a></li>
-                <li><a href="about-us.html">ABOUT US</a></li>
-                <li class="drop-down"><a href="services.html">SERVICES<img src="images/drop-drown-arrow2.png"
-                            alt="drop down icon">   </a><i class="arrow down" id="dropdown-arrow"></i>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/about-us.html">ABOUT US</a></li>
+                <li class="drop-down"><a href="/services.html">SERVICES</a><i class="arrow down" id="dropdown-arrow"></i>
                     <ul class="sub-menu" id="sub-menu">
-                        <li><a href="residential.html">RESIDENTIAL</a></li>
-                        <li><a href="commercial.html">COMMERCIAL</a></li>
+                        <li><a href="/residential.html">RESIDENTIAL</a></li>
+                        <li><a href="/commercial.html">COMMERCIAL</a></li>
                     </ul>
 
                 </li>
-                <li><a href="projects.html">PROJECTS</a></li>
-                <li><a href="contact-us.html">CONTACT US</a></li>
+                <li><a href="/projects.html">PROJECTS</a></li>
+                <li><a href="/contact-us.html">CONTACT US</a></li>
             </ul>
         </nav>
     </header>
@@ -79,20 +80,20 @@
 
             <div id="contact-form" class="contact-details-sub">
 
-                <form id="contact-form" method="POST" action="contact-form-handler.php"
+                <form id="contact-form" method="POST" action="/contact-form-handler.php"
                     onsubmit="alert('Message Sent')">
 
                     <label for="name">Full Name:</label>
-                    <input type="text" name="name" id="" class="form-input" required>
+                    <input type="text" name="name" class="form-input" required>
 
                     <label for="email">Email:</label>
-                    <input type="email" name="email" id="" class="form-input" required>
+                    <input type="email" name="email"  class="form-input" required>
 
                     <label for="pnumber">Phone:</label>
-                    <input type="tel" name="pnumber" id="" class="form-input">
+                    <input type="tel" name="pnumber" class="form-input">
 
                     <label for="">Your Message:</label>
-                    <textarea name="message" id="" cols="30" rows="10" required></textarea>
+                    <textarea name="message"  cols="30" rows="10" required></textarea>
 
 
                     <input type="submit" value="Send Message" id="submit-btn">
@@ -115,7 +116,7 @@
                     Our team has the experience to manage complex, time-sensitive projects. Reach out to us today.
                     <br>
                     <br>
-                    Email: <a href="mailto:Garrygill72@hotmail.com ">Garrygill72@hotmail.com </a>
+                    Email: bjkmanagementltd@hotmail.com
 
                 </p>
 
@@ -150,7 +151,7 @@
                     </li>
                     <li>Ph: 403-771-3702 </li>
                     <li>
-                        Email: <a href="mailto:Garrygill72@hotmail.com" class="mail-id">Garrygill72@hotmail.com</a>
+                        Email: bjkmanagementltd@hotmail.com
                     </li>
                 </ul>
             </div>
@@ -178,42 +179,7 @@
 
 
 
-    <script type="text/javascript">
-
-
-
-        // for making navbar responsive
-
-
-        const menu = document.querySelector('#mobile-menu');
-        const menuLinks = document.querySelector('.nav');
-
-        menu.addEventListener('click', function () {
-            menu.classList.toggle('is-active');
-            menuLinks.classList.toggle('active');
-        })
-
-
-
-        const subMenu = document.getElementById('sub-menu');
-        const dropdownArrow = document.getElementById('dropdown-arrow');
-
-        dropdownArrow.addEventListener('click', function subMenuToggle() {
-            if (subMenu.style.display != 'none') {
-                subMenu.style.display = 'none';
-                dropdownArrow.style.transform = 'rotate(45deg)';
-                dropdownArrow.style.top = '-2px';
-            }
-
-            else {
-                subMenu.style.display = 'block';
-                dropdownArrow.style.transform = 'rotate(-135deg)';
-                dropdownArrow.style.top = '2px';
-            }
-        }
-        )
-
-    </script>
+    <script src="js/nav.js"></script>
 
 
 </body>
